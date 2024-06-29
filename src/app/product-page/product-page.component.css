@@ -1,0 +1,99 @@
+.product {
+  color: blueviolet;
+}
+
+.product__image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.product__details {
+  padding: 15px;
+}
+
+.product__details h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.product__price {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.product__color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product__color span {
+  display: inline-block;
+  height: 25px;
+  background-color: black;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.product__category {
+  margin-bottom: 10px;
+}
+
+.product__description {
+  margin-bottom: 10px;
+}
+
+.product__quatity {
+  margin-bottom: 15px;
+}
+
+.product__quatity button {
+  background: blueviolet;
+  color: white;
+  outline: none;
+  border: 1px solid blueviolet;
+}
+
+.product__quatity input {
+  color: blueviolet;
+  border: 3px solid blueviolet;
+  outline: none;
+  margin: 0 5px;
+}
+
+.product__actions {
+  display: flex;
+  gap: 16px;
+}
+
+.product__actions button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product__actions .btn__addtocart {
+  background: white;
+  color: blueviolet;
+  border: 3px solid blueviolet;
+}
+
+.product__actions .btn__addtocart:hover {
+  background: rgb(205, 152, 255);
+  color: white;
+}
+
+.product__actions .btn__buynow {
+  background: blueviolet;
+  color: white;
+}
+
+.product__actions .btn__buynow:hover {
+  background: rgb(108, 34, 178);
+}

@@ -1,0 +1,84 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 40px;
+  color: blueviolet;
+}
+
+h1 a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: inline-flex;
+}
+
+.nav-menu-item {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.nav-menu-item a:hover {
+  border-bottom: 1px solid blueviolet;
+}
+
+.nav .nav-search {
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nav .nav-search input {
+  flex: 1;
+  height: 39px;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  border-right: none;
+  outline: none;
+}
+
+.nav .nav-search button {
+  height: 39px;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+  border-left: none;
+  outline: none;
+}
+
+/* Search Bar Styles  */
+.search-product-list {
+  position: absolute;
+  background: white;
+  /* border: 1px solid blueviolet; */
+  top: 6%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.search-product-item {
+  padding: 10px 15px;
+  border: 1px solid blueviolet;
+}

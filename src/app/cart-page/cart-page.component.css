@@ -1,0 +1,60 @@
+.cart-page {
+  padding: 10px;
+}
+
+.cart-page h2 {
+  margin: 15px 0;
+  font-size: 30px;
+  color: blueviolet;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-page .details {
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+}
+
+.cart-page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-page li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-page .product-image {
+  width: 110px;
+  height: 130px;
+}
+
+/* Summary Part */
+.summary {
+  border: 1px solid black;
+  padding: 15px 20px;
+  background: lightgray;
+  margin-bottom: 10px;
+}
+
+.summary h3 {
+  font-weight: 600;
+}
+
+.summary .discount__price {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.summary .total__price {
+  margin: 15px 0px;
+}
+
+.checkout-btn {
+  width: 100%;
+}

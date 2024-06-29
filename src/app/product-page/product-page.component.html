@@ -1,0 +1,36 @@
+<div class="row product" *ngIf="item">
+  <div class="col-sm-6">
+    <img src="{{ item.image }}" class="product__image" alt="" />
+  </div>
+  <div class="col-sm-6 product__details">
+    <h2>{{ item.name }}</h2>
+    <div class="product__price">Price: {{ item.price }}</div>
+    <div class="product__color">
+      Color: <span [style.backgroundColor]="item.color"></span>
+    </div>
+    <div class="product__category">Category: {{ item.category }}</div>
+    <div class="product__description">{{ item.description }}</div>
+    <div class="product__quatity">
+      <button class="decrement__btn" (click)="decreaseQuantity()">-</button>
+      <input type="number" value="{{ productQuantity }}" />
+      <button class="increament__btn" (click)="increaseQuantity()">+</button>
+    </div>
+    <div class="product__actions">
+      <button
+        *ngIf="!isItemAvailableInCart"
+        class="btn__addtocart"
+        (click)="addToCart()"
+      >
+        Add To Cart
+      </button>
+      <button
+        *ngIf="isItemAvailableInCart"
+        class="btn__addtocart"
+        (click)="removeFromCart()"
+      >
+        Remove From Cart
+      </button>
+      <button class="btn__buynow">Buy Now</button>
+    </div>
+  </div>
+</div>

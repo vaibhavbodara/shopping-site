@@ -1,0 +1,151 @@
+{
+  "seller": [
+    {
+      "name": "Parth Tank",
+      "password": "abc@123",
+      "email": "parth@email.com",
+      "id": 1
+    },
+    {
+      "name": "Hello",
+      "password": "hello@123",
+      "email": "hello@test.com",
+      "id": 2
+    },
+    {
+      "name": "Mandar",
+      "password": "mandar@123",
+      "email": "mandar@email.com",
+      "id": 3
+    },
+    {
+      "name": "Arjun",
+      "password": "arjun@123",
+      "email": "test@123.com",
+      "id": 4
+    },
+    {
+      "name": "John Doe",
+      "password": "john@123",
+      "email": "john@email.com",
+      "id": 5
+    },
+    {
+      "name": "Asav PAndya",
+      "password": "12345",
+      "email": "asav@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "John",
+      "password": "test@123",
+      "email": "john@test.com",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike Shoes",
+      "price": "9000",
+      "color": "Black",
+      "category": "Footware",
+      "description": "Air Jordan",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1c0eddc9-202f-4d84-b571-3d044f6d814f/dunk-high-retro-shoes-Cg1ncq.png",
+      "id": 1
+    },
+    {
+      "name": "Toyota Corolla",
+      "price": "8000000",
+      "color": "White",
+      "category": "Vehicle",
+      "description": "Nice Car",
+      "image": "https://imgd.aeplcdn.com/1280x720/cw/ec/37333/Toyota-Corolla-Altis-Exterior-142776.jpg",
+      "id": 2
+    },
+    {
+      "name": "Lenovo Tab 8",
+      "price": "8000",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Tablet ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPRM11GrmYlG2ZSSGSUaz0dYKz0n2HZ7sEw&usqp=CAU",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "John Doe",
+      "password": "test@123",
+      "email": "john@test.com",
+      "id": 1
+    },
+    {
+      "name": "Tony",
+      "password": "test@123",
+      "email": "tony@email.com",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "password": "test123",
+      "email": "test@123.com",
+      "id": 3
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "userId": 3,
+      "name": "Lenovo Tab 8",
+      "price": "8000",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Tablet ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPRM11GrmYlG2ZSSGSUaz0dYKz0n2HZ7sEw&usqp=CAU",
+      "quantity": 1,
+      "productId": 3,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "name": "Nike Shoes",
+      "price": "9000",
+      "color": "Black",
+      "category": "Footware",
+      "description": "Air Jordan",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1c0eddc9-202f-4d84-b571-3d044f6d814f/dunk-high-retro-shoes-Cg1ncq.png",
+      "quantity": 4,
+      "productId": 1,
+      "id": 2
+    },
+    {
+      "name": "Lenovo Tab 8",
+      "price": "8000",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Tablet ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgPRM11GrmYlG2ZSSGSUaz0dYKz0n2HZ7sEw&usqp=CAU",
+      "quantity": 3,
+      "userId": 3,
+      "productId": 3,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "name": "Toyota Corolla",
+      "price": "8000000",
+      "color": "White",
+      "category": "Vehicle",
+      "description": "Nice Car",
+      "image": "https://imgd.aeplcdn.com/1280x720/cw/ec/37333/Toyota-Corolla-Altis-Exterior-142776.jpg",
+      "quantity": 1,
+      "productId": 2,
+      "id": 4
+    }
+  ]
+}

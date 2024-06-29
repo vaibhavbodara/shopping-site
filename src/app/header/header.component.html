@@ -1,0 +1,59 @@
+<nav class="nav">
+  <h1>
+    <a routerLink="/">E-Comm</a>
+  </h1>
+  <div class="nav-search" *ngIf="menuType === 'default' || menuType === 'user'">
+    <input
+      type="text"
+      [value]="searchQuery"
+      (keyup)="findProducts($event)"
+      (blur)="searchProducts = []"
+      placeholder="Search for Product"
+    />
+    <button (click)="searchNavigate()">Search</button>
+    <ul class="search-product-list">
+      <a
+        *ngFor="let item of searchProducts"
+        class="search-product-item"
+        (mousedown)="navigateToProduct(item.id)"
+      >
+        <li>{{ item.name }}</li>
+      </a>
+    </ul>
+  </div>
+  <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'" class="nav-menu">
+      <li class="nav-menu-item"><a routerLink="/">Home</a></li>
+      <li class="nav-menu-item"><a routerLink="/seller-auth">Seller</a></li>
+      <li class="nav-menu-item"><a routerLink="/user-auth">Login</a></li>
+      <li class="nav-menu-item">
+        <a routerLink="">Cart({{ cartItems }})</a>
+      </li>
+    </ul>
+
+    <ul *ngSwitchCase="'user'" class="nav-menu">
+      <li class="nav-menu-item"><a routerLink="/">Home</a></li>
+      <li class="nav-menu-item"><a routerLink="/seller-auth">Seller</a></li>
+      <li class="nav-menu-item">
+        <a routerLink="/">{{ userData.name | titlecase }}</a>
+      </li>
+      <li class="nav-menu-item"><a (click)="logOutUser()">Log Out</a></li>
+      <li class="nav-menu-item">
+        <a routerLink="cart-page">Cart({{ cartItems }})</a>
+      </li>
+    </ul>
+
+    <ul *ngSwitchCase="'seller'" class="nav-menu">
+      <li class="nav-menu-item">
+        <a routerLink="">{{ sellerData.name | titlecase }}</a>
+      </li>
+      <li class="nav-menu-item">
+        <a routerLink="/seller-home">Product List</a>
+      </li>
+      <li class="nav-menu-item">
+        <a routerLink="/seller-add-product">Add Product</a>
+      </li>
+      <li class="nav-menu-item"><a (click)="logoutSeller()">Log Out</a></li>
+    </ul>
+  </div>
+</nav>

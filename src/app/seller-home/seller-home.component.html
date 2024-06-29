@@ -1,0 +1,25 @@
+<div>
+  <h2>Product List</h2>
+
+  <div class="product__list">
+    <div class="product" *ngFor="let product of products">
+      <img src="{{ product.image }}" alt="" srcset="" />
+      <div class="product__details">
+        <h3>{{ product.name }}</h3>
+        <p>Color: {{ product.color }}</p>
+        <p>Price: ${{ product.price }}</p>
+      </div>
+      <div class="product__btns">
+        <button
+          class="update__btn"
+          (click)="navigateToUpdateProduct(product.id)"
+        >
+          Update
+        </button>
+        <button class="delete__btn" (click)="removeProduct(product.id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

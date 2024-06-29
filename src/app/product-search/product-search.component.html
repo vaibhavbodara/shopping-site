@@ -1,0 +1,18 @@
+<div
+  class="row search-item"
+  *ngFor="let product of productList"
+  (click)="navigateToProduct(product.id)"
+>
+  <div class="col-sm-3">
+    <img src="{{ product.image }}" alt="" />
+  </div>
+  <div class="col-sm-8 details">
+    <h6>{{ product.name }}</h6>
+    <p>Price: ${{ product.price }}</p>
+    <p>
+      <span>Color: {{ product.color }}</span
+      ><span>Category: {{ product.category }}</span>
+    </p>
+    <p>{{ product.description }}</p>
+  </div>
+</div>

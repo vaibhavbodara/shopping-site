@@ -1,0 +1,21 @@
+.signup h1 {
+  margin: 30px 0;
+  font-size: 30px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.form-toggle {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-toggle a {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.form-error {
+  margin-top: 0px;
+  color: red;
+}
